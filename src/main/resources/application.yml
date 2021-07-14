@@ -1,0 +1,17 @@
+
+server:
+  servlet:
+    context-path: /democustomauthserver
+  port: 9990
+  tomcat:
+    accesslog:
+      #filename: c:/logs/democustomauthserver/democustomauthserver.log
+      enabled: true
+      file-date-format: .yyyy-MM-dd
+      directory: c:/logs/democustomauthserver # Directory in which log files are created. Can be relative to the tomcat base dir or absolute.
+      pattern: common # Format pattern for access logs.
+spring:
+  security:
+    user:
+      password: password
+logging.level.root: debug
